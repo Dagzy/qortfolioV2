@@ -1,49 +1,36 @@
-<!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Quirk</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+<mat-toolbar id="navvy" class="colory">
+  <span id="logo" class="logo">
+    <a routerLink="/" id="quirk" class="quirk1">quirk</a>
+  </span>
+  <button id="menu1" mat-icon-button [matMenuTriggerFor]="appMenu1">
+    <mat-icon>expand_more</mat-icon>
+  </button>
+  <mat-menu #appMenu1="matMenu">
+    <button mat-menu-item>
+      <a class="booton" href="https://ganache.com/" target="_blank">Ganache</a>
     </button>
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-        <li class="nav-item dropdown" ngbDropdown>
-          <a class="nav-link dropdown-toggle" id="dropdown01" ngbDropdownToggle>Dropdown</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown01" ngbDropdownMenu>
-            <a class="dropdown-item" href="#">Some stuff</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav> -->
-  <!-- <mat-toolbar>
-      <span>Quirk</span>
-    </mat-toolbar> -->
-    <mat-toolbar class="colory" color="red">
-      <span>quirk</span>
-      <span class="fill-space"></span>
-    
-      <mat-menu #appMenu="matMenu">
-          <button mat-menu-item> Settings </button>
-          <button mat-menu-item> Help </button>
-        </mat-menu>
-        <button mat-icon-button [matMenuTriggerFor]="appMenu">
-          <mat-icon>more_vert</mat-icon>
-        </button>
-        <!-- This fills the remaining space of the current row -->
-        <!-- <span>Right Aligned Text</span> -->
-      </mat-toolbar>
-      <!-- Creates a layout with a left and right sidenav and implicit content. -->
+    <button mat-menu-item>
+      <a class="booton" href="/reader">API Reader!</a>
+    </button>
+    <button mat-menu-item>
+      <a class="booton" href="https://split-500b7.firebaseapp.com/landing" target="_blank">Dumpd</a>
+    </button>
+    <button mat-menu-item>
+      <a class="booton" href="" target="_blank">LovelyDay Inc.</a>
+    </button>
+  </mat-menu>
+  <span class="fill-space"></span>
+  <button id="menu2" mat-icon-button [matMenuTriggerFor]="appMenu2">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #appMenu2="matMenu">
+    <button mat-menu-item> Contact </button>
+    <button mat-menu-item> Help </button>
+  </mat-menu>
+  <button id="settingsMenu" mat-icon-button [matMenuTriggerFor]="settingsMenu">
+    <mat-icon>settings</mat-icon>
+  </button>
+  <mat-menu #settingsMenu="matMenu">
+    <button mat-menu-item (click)="colorToggle()">Toggle Colors</button>
+  </mat-menu>
+</mat-toolbar>

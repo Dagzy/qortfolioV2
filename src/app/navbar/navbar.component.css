@@ -4,5 +4,41 @@
     flex: 1 1 auto;
   }
 .colory{
-    background-color: maroon;
+    background-color: #4c0d0d;
+    color:white;
+}
+.colorify{
+    background-color: #aaa;
+}
+.logo{
+    border: white solid 1px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10%;
+    color: white;
+}
+.quirk1{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+.logo2{
+    border: black solid 1px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10%;
+    color: #000;
+}
+.quirk2{
+    text-decoration: none;
+    color:#000;
+}
+#menu{
+    border: black solid 1px;
+    padding: 0 10px 15px 7px;
+    border-radius: 10%;
+}
+.booton{
+    text-decoration: none;
+    color:#000;
+    /* border: black solid 1px; */
+    padding: 5px 10px 5px 10px;
+    border-radius: 10%;
 }

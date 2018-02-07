@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {RouterModule, Routes} from '@angular/router';
+import {RouterModule, Routes, RouterLink} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 
 
@@ -18,6 +18,7 @@ import { AboutComponent } from './about/about.component';
 import { routes } from './services/routes';
 import { FooterComponent } from './footer/footer.component';
 import { ReaderComponent } from './reader/reader.component';
+import { LovelyDayComponent } from './lovely-day/lovely-day.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ReaderComponent } from './reader/reader.component';
     HomeComponent,
     AboutComponent,
     FooterComponent,
-    ReaderComponent
+    ReaderComponent,
+    LovelyDayComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,8 @@ import { ReaderComponent } from './reader/reader.component';
     MatIconModule,
     MatSidenavModule,
     NgbModule.forRoot(),
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

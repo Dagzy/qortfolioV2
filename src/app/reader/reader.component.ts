@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ReaderComponent implements OnInit {
   results: any;
-
+  arr = [];
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
@@ -16,10 +16,18 @@ export class ReaderComponent implements OnInit {
 
   }
   gettyClicky() {
-    this.http.get('https://swapi.co/api/people').subscribe(data => {
-      this.results = data['results'];
-      console.log(this.results[2].name);
+    this.http.get('http://demo.ckan.org/api/3/action/package_search?fq=tags:economy').subscribe(data => {
+      this.results = data;
+      console.log(typeof(this.results));
+      console.log(this.results);
+    //   console.log(this.results[1].login);
+    //   this.results.forEach(element => {
+    //     console.log(element.login);
+    //     this.arr.push(element.login);
+    //   });
+    // console.log(this.arr[0], this.arr[1]);
     });
   }
+
 
 }
