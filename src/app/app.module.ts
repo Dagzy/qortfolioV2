@@ -19,6 +19,7 @@ import { routes } from './services/routes';
 import { FooterComponent } from './footer/footer.component';
 import { ReaderComponent } from './reader/reader.component';
 import { LovelyDayComponent } from './lovely-day/lovely-day.component';
+import { DogpiesComponent } from './dogpies/dogpies.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { LovelyDayComponent } from './lovely-day/lovely-day.component';
     AboutComponent,
     FooterComponent,
     ReaderComponent,
-    LovelyDayComponent
+    LovelyDayComponent,
+    DogpiesComponent
   ],
   imports: [
     BrowserModule,
