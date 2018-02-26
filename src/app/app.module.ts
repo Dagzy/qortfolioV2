@@ -9,6 +9,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatToolbarModule} from '@angular/material';
 import {MatMenuModule, MatIconModule} from '@angular/material';
 import {MatSidenavModule} from '@angular/material';
+import {MatFormFieldModule} from '@angular/material';
 
 
 import { AppComponent } from './app.component';
@@ -41,6 +42,7 @@ import { DogpiesComponent } from './dogpies/dogpies.component';
     MatToolbarModule,
     MatMenuModule,
     MatIconModule,
+    MatFormFieldModule,
     MatSidenavModule,
     NgbModule.forRoot(),
     RouterModule.forRoot(routes),
