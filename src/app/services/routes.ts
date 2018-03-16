@@ -3,6 +3,7 @@ import { AboutComponent } from '../about/about.component';
 import { ReaderComponent } from '../reader/reader.component';
 import { LovelyDayComponent } from '../lovely-day/lovely-day.component';
 import { DogpiesComponent } from '../dogpies/dogpies.component';
+import { PlantMachineComponent } from '../plant-machine/plant-machine.component';
 
 export const routes =  [
     {
@@ -24,6 +25,10 @@ export const routes =  [
     {
         path: 'dogpies',
         component: DogpiesComponent
+    },
+    {
+        path: 'plantMachine',
+        component: PlantMachineComponent
     }
 
 ];

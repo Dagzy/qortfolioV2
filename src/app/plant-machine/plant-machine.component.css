@@ -1,0 +1,23 @@
+/* ul{
+    list-style-type: none;
+} */
+#booton0{
+    background-color: red;
+    margin-left: 200px;
+}
+#booton1{
+    background-color: blue;
+}
+#booton2{
+    color: green;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
